@@ -566,6 +566,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BW9-ie-0iD" secondAttribute="trailing" id="1kH-rt-SKG"/>
                                     <constraint firstAttribute="bottom" secondItem="Sj6-LH-7Nw" secondAttribute="bottom" constant="61" id="2Vu-r4-QNm"/>
                                     <constraint firstItem="PnR-eg-bFp" firstAttribute="leading" secondItem="4c6-cG-56l" secondAttribute="trailing" constant="501" id="3Ff-s8-1mx"/>
                                     <constraint firstItem="5St-h8-zTq" firstAttribute="leading" secondItem="c9v-Yz-OJB" secondAttribute="trailing" id="3GL-JB-IN7"/>
@@ -598,6 +599,7 @@
                                     <constraint firstItem="bgJ-ns-slJ" firstAttribute="top" secondItem="BW9-ie-0iD" secondAttribute="bottom" constant="50.5" id="R7u-lm-lUX"/>
                                     <constraint firstItem="QUA-uK-Baz" firstAttribute="leading" secondItem="0dV-Qc-fmK" secondAttribute="trailing" constant="77" id="SCz-iU-2nR"/>
                                     <constraint firstItem="BW9-ie-0iD" firstAttribute="top" secondItem="XSF-Vh-l0q" secondAttribute="top" constant="38" id="UJe-4X-DP8"/>
+                                    <constraint firstItem="BW9-ie-0iD" firstAttribute="leading" secondItem="XSF-Vh-l0q" secondAttribute="leading" id="WRb-l2-zvv"/>
                                     <constraint firstAttribute="trailing" secondItem="A4f-Cc-rBd" secondAttribute="trailing" constant="127" id="Zho-z2-Yxs"/>
                                     <constraint firstItem="AQL-nM-S5J" firstAttribute="leading" secondItem="W6L-ik-FZv" secondAttribute="trailing" id="ZwC-Y7-hdg"/>
                                     <constraint firstItem="sRz-75-DwQ" firstAttribute="leading" secondItem="DvJ-3w-hs1" secondAttribute="trailing" constant="20" id="bZu-54-Kv5"/>
@@ -605,6 +607,7 @@
                                     <constraint firstItem="pmk-qN-J0g" firstAttribute="leading" secondItem="bgJ-ns-slJ" secondAttribute="trailing" id="dRe-Fk-9OA"/>
                                     <constraint firstAttribute="trailing" secondItem="PnR-eg-bFp" secondAttribute="trailing" constant="128" id="gM4-3F-9jp"/>
                                     <constraint firstItem="DPb-F2-FZh" firstAttribute="leading" secondItem="QUA-uK-Baz" secondAttribute="trailing" id="gcb-m4-luC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="257" id="hai-Cs-BPx"/>
                                     <constraint firstItem="0dV-Qc-fmK" firstAttribute="leading" secondItem="JM0-e0-U9b" secondAttribute="trailing" constant="7.5" id="ioe-Mw-U50"/>
                                     <constraint firstAttribute="bottom" secondItem="5St-h8-zTq" secondAttribute="bottom" constant="61" id="isx-IY-xsv"/>
                                     <constraint firstItem="A4f-Cc-rBd" firstAttribute="top" secondItem="BW9-ie-0iD" secondAttribute="bottom" constant="50.5" id="jXY-Xk-E62"/>
@@ -1287,7 +1290,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRa-yW-dTS" customClass="ButtomCustom" customModule="しゅくまる" customModuleProvider="target">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRa-yW-dTS" customClass="ButtomCustom" customModule="しゅくまる" customModuleProvider="target">
                                                     <rect key="frame" x="252" y="16" width="35" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="fRa-yW-dTS" secondAttribute="height" multiplier="35:27" id="UbY-zY-Raz"/>
@@ -1332,12 +1335,12 @@
                                                         <constraint firstAttribute="width" secondItem="jiU-6k-xbQ" secondAttribute="height" multiplier="1:1" id="bqa-Xh-JaY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgH-li-Txw">
+                                                <button opaque="NO" tag="4" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgH-li-Txw">
                                                     <rect key="frame" x="333" y="6" width="47" height="47"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="sgH-li-Txw" secondAttribute="height" multiplier="1:1" id="LMl-J2-y94"/>
                                                     </constraints>
-                                                    <state key="normal" backgroundImage="はなまる_off">
+                                                    <state key="normal" backgroundImage="はなまるoff">
                                                         <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -1384,13 +1387,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LQ-fv-Mzs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LQ-fv-Mzs">
                                         <rect key="frame" x="106" y="97.5" width="8.3333333333333286" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-ym-hRQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-ym-hRQ">
                                         <rect key="frame" x="106" y="121.5" width="8.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
@@ -1456,7 +1459,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwQ-cb-nxo">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwQ-cb-nxo">
                                         <rect key="frame" x="999" y="135" width="6" height="11"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <nil key="textColor"/>
