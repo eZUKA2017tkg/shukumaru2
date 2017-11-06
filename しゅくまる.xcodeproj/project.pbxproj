@@ -23,6 +23,8 @@
 		19188F1A1F9526160033D03D /* TabFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19188F191F9526160033D03D /* TabFourthViewController.swift */; };
 		19188F1C1F9530920033D03D /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19188F1B1F9530920033D03D /* ButtonCustom.swift */; };
 		19188F1E1F953DBE0033D03D /* shukudaiTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19188F1D1F953DBE0033D03D /* shukudaiTableCell.swift */; };
+		191F5E551FAFF731003DB50E /* DateManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F5E541FAFF731003DB50E /* DateManeger.swift */; };
+		191F5E571FAFF75D003DB50E /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F5E561FAFF75D003DB50E /* CalenderCell.swift */; };
 		1945BF621FAF052D00EF3371 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945BF611FAF052D00EF3371 /* SystemConfiguration.framework */; };
 		1945BF641FAF053A00EF3371 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945BF631FAF053A00EF3371 /* GLKit.framework */; };
 		1945BF661FAF054100EF3371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945BF651FAF054100EF3371 /* Foundation.framework */; };
@@ -38,6 +40,7 @@
 		1945BF7B1FAF05E600EF3371 /* SkyWay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1945BF791FAF05DB00EF3371 /* SkyWay.framework */; };
 		1945BF7C1FAF05E600EF3371 /* SkyWay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1945BF791FAF05DB00EF3371 /* SkyWay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		197166C91FAD731800B04AD2 /* tableViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197166C81FAD731800B04AD2 /* tableViewList.swift */; };
+		198150141FB0D58100898073 /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198150131FB0D58100898073 /* CustomUICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,8 @@
 		19188F191F9526160033D03D /* TabFourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabFourthViewController.swift; sourceTree = "<group>"; };
 		19188F1B1F9530920033D03D /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		19188F1D1F953DBE0033D03D /* shukudaiTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shukudaiTableCell.swift; sourceTree = "<group>"; };
+		191F5E541FAFF731003DB50E /* DateManeger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManeger.swift; sourceTree = "<group>"; };
+		191F5E561FAFF75D003DB50E /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		1945BF611FAF052D00EF3371 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1945BF631FAF053A00EF3371 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		1945BF651FAF054100EF3371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +113,7 @@
 		1945BF771FAF05C000EF3371 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		1945BF791FAF05DB00EF3371 /* SkyWay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyWay.framework; sourceTree = "<group>"; };
 		197166C81FAD731800B04AD2 /* tableViewList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewList.swift; sourceTree = "<group>"; };
+		198150131FB0D58100898073 /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +180,12 @@
 			children = (
 				1917F8781F5AFBB90070C44F /* AppDelegate.swift */,
 				1917F87E1F5AFBB90070C44F /* Main.storyboard */,
+				191F5E541FAFF731003DB50E /* DateManeger.swift */,
+				191F5E561FAFF75D003DB50E /* CalenderCell.swift */,
 				19188F1D1F953DBE0033D03D /* shukudaiTableCell.swift */,
 				19188F1B1F9530920033D03D /* ButtonCustom.swift */,
 				19188F191F9526160033D03D /* TabFourthViewController.swift */,
+				198150131FB0D58100898073 /* CustomUICollectionViewCell.swift */,
 				19188F151F9525680033D03D /* TabSecondViewController.swift */,
 				19188F171F95257F0033D03D /* TabThirdViewController.swift */,
 				19188F131F9525320033D03D /* TabFirstViewController.swift */,
@@ -369,6 +378,9 @@
 				19188F181F95257F0033D03D /* TabThirdViewController.swift in Sources */,
 				19188F161F9525680033D03D /* TabSecondViewController.swift in Sources */,
 				1917F87D1F5AFBB90070C44F /* SecondViewController.swift in Sources */,
+				191F5E571FAFF75D003DB50E /* CalenderCell.swift in Sources */,
+				191F5E551FAFF731003DB50E /* DateManeger.swift in Sources */,
+				198150141FB0D58100898073 /* CustomUICollectionViewCell.swift in Sources */,
 				19188F1E1F953DBE0033D03D /* shukudaiTableCell.swift in Sources */,
 				1917F8791F5AFBB90070C44F /* AppDelegate.swift in Sources */,
 				197166C91FAD731800B04AD2 /* tableViewList.swift in Sources */,
