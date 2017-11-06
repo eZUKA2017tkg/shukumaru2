@@ -81,16 +81,33 @@ class TabFourthViewController: UIViewController, UICollectionViewDataSource, UIC
             cell.textLabel?.textColor = UIColor.gray
         }
         
+        let Btn = cell.hanamaruBtn
         //テキスト配置
         if indexPath.section == 0 {
             cell.textLabel?.text = weekArray[indexPath.row]
-            let Btn = cell.hanamaruBtn
-            Btn?.removeFromSuperview()
+            Btn?.setBackgroundImage(UIImage(named: "nil"), for: .normal)
         }else {
             cell.textLabel?.text = dateManager.conversionDateFormat(indexPath: indexPath)
+            Btn?.setBackgroundImage(UIImage(named: "はなまるoff"), for: .normal)
             //月によって1日の場所は異なる
             
         }
+        
+        let ordinalityOfFirstDay2 = Calendar.current.ordinality(of: .day, in: .weekOfMonth, for: dateManager.firstDateOfMonth())
+        
+        let dateRange = NSCalendar.current.range(of: .day, in: .month, for: dateManager.firstDateOfMonth())
+        
+        if indexPath.section == 1 {
+        if (ordinalityOfFirstDay2! - 1) > indexPath.row {
+            cell.textLabel.text = ""
+            Btn?.setBackgroundImage(UIImage(named: "nil"), for: .normal)
+        }
+        if (ordinalityOfFirstDay2! - 2 + (dateRange?.count)!) < indexPath.row {
+            cell.textLabel.text = ""
+                        Btn?.setBackgroundImage(UIImage(named: "nil"), for: .normal)
+        }
+        }
+        
         return cell
     }
     
@@ -100,9 +117,9 @@ class TabFourthViewController: UIViewController, UICollectionViewDataSource, UIC
         let width: CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin) / CGFloat(daysPerWeek)
         let height: CGFloat
         if indexPath.section == 0 {
-        height = width * 0.4
+        height = width * 0.3
         }else {
-            height = width * 0.9
+            height = width * 0.8
         }
         
         return CGSize(width: width, height: height)

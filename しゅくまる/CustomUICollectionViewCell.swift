@@ -10,4 +10,6 @@ import UIKit
 
 class CustomUICollectionViewCell: UICollectionViewCell {
     
+        let cell:CalenderCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath as IndexPath) as! CalenderCell
+    
 }
