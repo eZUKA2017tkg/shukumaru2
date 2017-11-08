@@ -200,10 +200,7 @@ class TabFirstViewController: UIViewController, UITableViewDelegate {
     //sectionごとの配列数の決定
     var label2Array = Array<String>()
     
-    
-    @IBAction func OKTap(_ sender: Any) {
-        
-        
+    func ataiwatashi() {
         //配列数の決定と初期化
         if hantei == 1 {
             
@@ -279,28 +276,27 @@ class TabFirstViewController: UIViewController, UITableViewDelegate {
                 num += 1
             }
         }
-        
-        goToNextPage()
-        
-        func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
 
     }
     
-    func goToNextPage() {
-        self.performSegue(withIdentifier: "mySegue", sender: label2Array)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "mySegue" {
+    @IBAction func okTap(_ sender: Any) {
+
+            ataiwatashi()
             
-            let tableViewList = segue.destination as! tableViewList
-            tableViewList.label2Array = sender as! Array<String>
-        }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextVC:tableViewList = storyboard.instantiateViewController(withIdentifier: "foo") as! tableViewList
+            nextVC.label2Array = self.label2Array
+            navigationController?.pushViewController(nextVC, animated: true)
+            
+            func didReceiveMemoryWarning() {
+                super.didReceiveMemoryWarning()
+                // Dispose of any resources that can be recreated.
+                
+            }
+
+        
     }
+
     
     
     

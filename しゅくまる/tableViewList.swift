@@ -16,8 +16,6 @@ class tableViewList: UIViewController,UITableViewDataSource, UITableViewDelegate
     var buttonArray = Array<Int>()
     var img2Array = Array<Int>()
     
-    @IBOutlet weak var TodayDate: UILabel!
-    
     @IBOutlet weak var shukudaisuu2: UILabel!
     
     @IBOutlet weak var shukudaisuu: UILabel!
@@ -25,6 +23,9 @@ class tableViewList: UIViewController,UITableViewDataSource, UITableViewDelegate
     @IBOutlet weak var finish: UILabel!
     
     @IBOutlet weak var finish2: UILabel!
+    
+    @IBOutlet weak var todayLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,8 +85,12 @@ class tableViewList: UIViewController,UITableViewDataSource, UITableViewDelegate
             shukudaisuu2.text = String(shukudaiCount)
             
             finish.text = String(finishCount)
-
-
+        
+        let selectDate = Date()
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "yyyy" + "年" + "MM" + "月" + "d" + "日"
+        let TodayDate = formatter.string(from: selectDate as Date)
+        todayLabel.text = TodayDate
     }
     
     
